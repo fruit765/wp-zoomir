@@ -11,72 +11,20 @@
             <div class="akcii__title title">Акции</div>
             <div class="akcii__items">
                 <div class="akcii__items-wrapper">
-                    <a href="#" class="akcii__item">
-                        <div class="akcii__item-procent">25%</div>
-                        <div class="akcii__item-image">
-                            <img src="<?php echo get_template_directory_uri(); ?>/resources/imgs/akcii-item-image1.png">
-                        </div>
-                        <div class="akcii__item-text">
-                            <div class="akcii__item-title">Все средства</div>
-                            <div class="akcii__item-desc">для отучения гадить и грызть для кошек и собак.</div>
-                            <div class="akcii__item-more">Подробнее >></div>
-                        </div>
-                    </a>
-                    <a href="#" class="akcii__item">
-                        <div class="akcii__item-procent">50%</div>
-                        <div class="akcii__item-image">
-                            <img src="<?php echo get_template_directory_uri(); ?>/resources/imgs/akcii-item-image2.png">
-                        </div>
-                        <div class="akcii__item-text">
-                            <div class="akcii__item-title">Все средства</div>
-                            <div class="akcii__item-desc">для отучения гадить и грызть для кошек и собак.</div>
-                            <div class="akcii__item-more">Подробнее >></div>
-                        </div>
-                    </a>
-                    <a href="#" class="akcii__item">
-                        <div class="akcii__item-procent">25%</div>
-                        <div class="akcii__item-image">
-                            <img src="<?php echo get_template_directory_uri(); ?>/resources/imgs/akcii-item-image1.png">
-                        </div>
-                        <div class="akcii__item-text">
-                            <div class="akcii__item-title">Все средства</div>
-                            <div class="akcii__item-desc">для отучения гадить и грызть для кошек и собак.</div>
-                            <div class="akcii__item-more">Подробнее >></div>
-                        </div>
-                    </a>
-                    <a href="#" class="akcii__item">
-                        <div class="akcii__item-procent">50%</div>
-                        <div class="akcii__item-image">
-                            <img src="<?php echo get_template_directory_uri(); ?>/resources/imgs/akcii-item-image2.png">
-                        </div>
-                        <div class="akcii__item-text">
-                            <div class="akcii__item-title">Все средства</div>
-                            <div class="akcii__item-desc">для отучения гадить и грызть для кошек и собак.</div>
-                            <div class="akcii__item-more">Подробнее >></div>
-                        </div>
-                    </a>
-                    <a href="#" class="akcii__item">
-                        <div class="akcii__item-procent">25%</div>
-                        <div class="akcii__item-image">
-                            <img src="<?php echo get_template_directory_uri(); ?>/resources/imgs/akcii-item-image1.png">
-                        </div>
-                        <div class="akcii__item-text">
-                            <div class="akcii__item-title">Все средства</div>
-                            <div class="akcii__item-desc">для отучения гадить и грызть для кошек и собак.</div>
-                            <div class="akcii__item-more">Подробнее >></div>
-                        </div>
-                    </a>
-                    <a href="#" class="akcii__item">
-                        <div class="akcii__item-procent">50%</div>
-                        <div class="akcii__item-image">
-                            <img src="<?php echo get_template_directory_uri(); ?>/resources/imgs/akcii-item-image2.png">
-                        </div>
-                        <div class="akcii__item-text">
-                            <div class="akcii__item-title">Все средства</div>
-                            <div class="akcii__item-desc">для отучения гадить и грызть для кошек и собак.</div>
-                            <div class="akcii__item-more">Подробнее >></div>
-                        </div>
-                    </a>
+                    <?php $loop = new WP_Query(array('posts_per_page' => 0, 'post_type' => 'akcii', 'orderby' => 'id', 'order' => 'DESC')); ?>
+                    <?php while ($loop->have_posts()) { $loop->the_post() ?>
+                        <a href="#" class="akcii__item">
+                            <div class="akcii__item-procent"><?php echo get_field('proczent', get_the_ID()); ?></div>
+                            <div class="akcii__item-image">
+                                <img src="<?php echo wp_get_attachment_image_url(get_post_meta(get_the_ID(), '_thumbnail_id', true), 'full'); ?>">
+                            </div>
+                            <div class="akcii__item-text">
+                                <div class="akcii__item-title"><?php the_title(); ?></div>
+                                <div class="akcii__item-desc"><?php the_content(); ?></div>
+                                <div class="akcii__item-more">Подробнее >></div>
+                            </div>
+                        </a>
+                    <?php } wp_reset_query(); ?>
                 </div>
             </div>
         </div>
