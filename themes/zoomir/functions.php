@@ -1,4 +1,7 @@
 <?php
+    // Подключаем сторонние библиотеки php
+    require_once('inc/category-img.php');
+
     // Подключаем стили
     function css_mystyle() {
         if(!is_admin()){

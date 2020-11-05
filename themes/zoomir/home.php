@@ -33,42 +33,16 @@
             <div class="catalog__title title">Каталог</div>
             <div class="catalog__desc">В наших магазинах есть товары для разных питомцев, для каждого найдется что-то свое.</div>
             <div class="catalog__items">
-                <a href="#" class="catalog__item">
-                    <div class="catalog__item-title">Ветаптека</div>
-                    <div class="catalog__item-image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/resources/imgs/catalog-item-image1.png">
-                    </div>
-                </a>
-                <a href="#" class="catalog__item">
-                    <div class="catalog__item-title">Каталог</div>
-                    <div class="catalog__item-image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/resources/imgs/catalog-item-image2.png">
-                    </div>
-                </a>
-                <a href="#" class="catalog__item">
-                    <div class="catalog__item-title">Аксессуары</div>
-                    <div class="catalog__item-image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/resources/imgs/catalog-item-image3.png">
-                    </div>
-                </a>
-                <a href="#" class="catalog__item">
-                    <div class="catalog__item-title">Садоводство</div>
-                    <div class="catalog__item-image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/resources/imgs/catalog-item-image4.png">
-                    </div>
-                </a>
-                <a href="#" class="catalog__item">
-                    <div class="catalog__item-title">Рыбы<br>и аквариумы</div>
-                    <div class="catalog__item-image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/resources/imgs/catalog-item-image5.png">
-                    </div>
-                </a>
-                <a href="#" class="catalog__item">
-                    <div class="catalog__item-title">Животные</div>
-                    <div class="catalog__item-image">
-                        <img src="<?php echo get_template_directory_uri(); ?>/resources/imgs/catalog-item-image6.png">
-                    </div>
-                </a>
+                <?php if ($categories = get_categories(array('taxonomy' => 'catalog-categories', 'parent' => 0, 'hide_empty' => 0, 'orderby' => 'id', 'order' => 'ASC'))) { ?>
+                    <?php foreach ($categories as $category) { ?>
+                        <a href="<?php echo get_category_link($category->term_id); ?>" class="catalog__item">
+                            <div class="catalog__item-title"><?php echo $category->cat_name; ?></div>
+                            <div class="catalog__item-image">
+                                <img src="<?php echo wp_get_attachment_image_url(get_term_meta($category->term_id, '_thumbnail_id', true), 'full'); ?>">
+                            </div>
+                        </a>
+                    <?php } ?>
+                <?php } ?>
             </div>
             <button class="catalog__btn btn">В каталог</button>
         </div>
