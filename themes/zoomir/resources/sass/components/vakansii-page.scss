@@ -1,0 +1,228 @@
+.vakansii-page {
+
+    margin-top: 80px;
+
+    &__title-desc-wrapper {
+
+        text-align: left;
+    }
+
+    &__title-desc {
+
+        display: inline-block;
+        text-align: right;
+    }
+
+    &__desc {
+
+        display: inline-block;
+        max-width: 450px;
+        text-align: left;
+        font-size: 18px;
+    }
+
+    &__items {
+
+        max-width: 1400px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+    }
+
+    &__item {
+
+        display: flex;
+        margin-bottom: 50px;
+
+        &:last-child {
+
+            margin-bottom: 0;
+        }
+
+        &-text {
+
+            max-width: 450px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            &-title {
+
+                font-weight: bold;
+                font-size: 30px;
+                text-transform: uppercase;
+                color: #C2000D;
+                padding-right: 70px;
+                position: relative;
+                margin-top: 60px;
+                margin-bottom: 100px;
+
+                &::before {
+
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 130px;
+                    height: 130px;
+                    top: -60px;
+                    right: 0;
+                    background-repeat: no-repeat;
+                    background-position: -25px -25px;
+                    background-size: auto 180px;
+                }
+
+                &_maykop {
+
+                    &::before {
+
+                        background-image: url('../resources/imgs/vakansii-page-item-text-title-maykop.svg');
+                    }
+                }
+
+                &_belorechensk {
+
+                    &::before {
+
+                        background-image: url('../resources/imgs/vakansii-page-item-text-title-belorechensk.svg');
+                        background-position: -5px -5px;
+                        background-size: auto 140px;
+                    }
+                }
+            }
+
+            &-desc {
+                
+                font-weight: bold;
+                font-size: 30px;
+                text-transform: uppercase;
+                margin-bottom: 50px;
+            }
+        }
+
+        &-image {
+
+            max-width: 504px;
+
+            img {
+
+                max-width: 100%;
+            }
+        }
+
+        &:nth-child(odd) {
+
+            .vakansii-page__item-text {
+
+                margin-right: 20px;
+            }
+
+            .vakansii-page__item-image {
+
+                margin-left: auto;
+            }
+        }
+
+        &:nth-child(even) {
+
+            .vakansii-page__item-text {
+
+                order: 2;
+                margin-left: auto;
+            }
+
+            .vakansii-page__item-image {
+
+                order: 1;
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:780px) {
+
+    .vakansii-page {
+
+        margin-top: 50px;
+
+        &__title {
+
+            margin-bottom: 30px;
+        }
+
+        &__item {
+
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+
+            &-text {
+
+                width: 100%;
+                max-width: none;
+                margin-right: 0 !important;
+                position: relative;
+                z-index: 2;
+
+                &-title {
+
+                    margin-bottom: 40px;
+                }
+            }
+
+            &-image {
+
+                max-width: 70%;
+                margin-top: -100px;
+                position: relative;
+                z-index: 1;
+            }
+
+            &:nth-child(even) {
+
+                .vakansii-page__item-text {
+
+                    align-items: flex-end;
+                    order: 1;
+
+                    &-title {
+
+                        padding-left: 70px;
+                        padding-right: 0;
+
+                        &::before {
+
+                            right: auto;
+                            left: 0;
+                        }
+
+                        &_belorechensk-mobile-left {
+
+                            &::before {
+
+                                background-image: url('../resources/imgs/vakansii-page-item-text-title-belorechensk-mobile-left.svg');
+                                background-position: -20px -20px;
+                                background-size: auto 170px;
+                            }
+                        }
+
+                        &_maykop-mobile-left {
+
+                            &::before {
+
+                                background-image: url('../resources/imgs/vakansii-page-item-text-title-maykop-mobile-left.svg');
+                            }
+                        }
+                    }
+                }
+
+                .vakansii-page__item-image {
+
+                    order: 2;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

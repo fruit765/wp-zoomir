@@ -1,0 +1,231 @@
+.company-page {
+
+    margin-top: 80px;
+
+    &__title {
+
+        position: relative;
+
+        &::before {
+
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 130px;
+            top: -40px;
+            left: -120px;
+            background-image: url('../resources/imgs/company-page-title-vector.svg');
+            background-repeat: no-repeat;
+            background-position: 0 -90px;
+            background-size: auto 350px;
+        }
+    }
+
+    &__inform {
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        font-size: 18px;
+
+        &-nums {
+
+            width: 30%;
+
+            &-item {
+
+                margin-bottom: 30px;
+
+                &:last-child {
+
+                    margin-bottom: 0;
+                }
+
+                span {
+
+                    font-weight: bold;
+                    font-size: 30px;
+                    text-transform: uppercase;
+                    color: #C2000D;
+                }
+
+                &:nth-child(2), &:nth-child(3) {
+
+                    span {
+
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        &-image {
+
+            width: 70%;
+            max-width: 933px;
+            margin-left: auto;
+
+            img {
+
+                max-width: 100%;
+                display: block;
+            }
+        }
+
+        &-text-wrapper {
+
+            width: 70%;
+            max-width: 933px;
+            margin-left: auto;
+        }
+
+        &-text {
+
+            max-width: 500px;
+            padding-left: 8%;
+
+            p {
+
+                &:first-child {
+
+                    margin-top: 0;
+                }
+
+                &:last-child {
+
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:780px) {
+
+    .company-page {
+
+        margin-top: 50px;
+    
+        &__title {
+    
+            &::before {
+
+                top: -70px;
+                left: 0;
+                background-image: url('../resources/imgs/company-page-title-mobile-vector.svg');
+                background-position: 15px -80px;
+                background-size: auto 380px;
+            }
+        }
+
+        &__inform {
+
+            &-nums {
+
+                width: 100%;
+                order: 2;
+
+                &-item {
+
+                    margin-bottom: 15px;
+                }
+            }
+
+            &-image {
+
+                width: 100%;
+                order: 1;
+            }
+
+            &-text-wrapper {
+
+                width: 100%;
+                order: 3;
+                margin-top: 50px;
+            }
+
+            &-text {
+
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:670px) {
+
+    .company-page {
+    
+        &__title {
+    
+            &::before {
+
+                top: -60px;
+                background-position: 15px -70px;
+                background-size: auto 330px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:540px) {
+
+    .company-page {
+    
+        &__title {
+    
+            &::before {
+
+                background-position: 15px -60px;
+                background-size: auto 290px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    .company-page {
+    
+        &__title {
+    
+            &::before {
+
+                top: -50px;
+                background-position: 15px -50px;
+                background-size: auto 250px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:420px) {
+
+    .company-page {
+    
+        &__title {
+    
+            &::before {
+
+                background-position: 15px -40px;
+                background-size: auto 220px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:360px) {
+
+    .company-page {
+    
+        &__title {
+    
+            &::before {
+
+                background-position: 15px -30px;
+                background-size: auto 200px;
+            }
+        }
+    }
+}

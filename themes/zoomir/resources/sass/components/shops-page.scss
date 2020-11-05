@@ -1,0 +1,285 @@
+.shops-page {
+
+    margin-top: 80px;
+
+    &__title-desc-wrapper {
+
+        text-align: left;
+    }
+
+    &__title-desc {
+
+        display: inline-block;
+        text-align: right;
+    }
+
+    &__desc {
+
+        display: inline-block;
+        max-width: 450px;
+        text-align: left;
+        font-size: 18px;
+    }
+
+    &__map {
+
+        margin-top: 20px;
+
+        img {
+
+            width: 100%;
+        }
+    }
+
+    &__tabs {
+
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+    }
+
+    &__tab {
+
+        display: block;
+        width: 180px;
+        height: 70px;
+        text-align: center;
+        line-height: 70px;
+        font-size: 18px;
+        color: #363636;
+        text-decoration: none;
+        border: 1px solid #C2000D;
+
+        &_active {
+
+            background-color: #fff;
+        }
+
+        &:nth-child(1) {
+
+            border-radius: 30px 0 0 30px;
+            border-right: none;
+        }
+
+        &:nth-child(2) {
+
+            border-radius: 0 30px 30px 0;
+        }
+    }
+
+    &__items {
+
+        margin-top: 40px;
+    }
+
+    &__item {
+
+        display: flex;
+        align-items: flex-start;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 30px;
+        margin-bottom: 40px;
+        text-decoration: none;
+        color: #363636;
+        font-size: 18px;
+
+        &-title {
+
+            display: none;
+        }
+
+        &:last-child {
+
+            margin-bottom: 0;
+        }
+
+        &-image {
+
+            border-radius: 10px;
+            overflow: hidden;
+            margin-right: 30px;
+
+            img {
+
+                display: block;
+                max-width: 100%;
+            }
+        }
+
+        &-text {
+
+            margin-top: -30px;
+
+            &-title {
+
+                margin-bottom: 20px;
+                font-weight: bold;
+                font-size: 30px;
+                text-transform: uppercase;
+            }
+
+            &-table {
+
+                table {
+
+                    width: 100%;
+                    border: 0;
+                    border-spacing: 0;
+
+                    td {
+
+                        padding-right: 10px;
+                        padding-bottom: 10px;
+                        vertical-align: top;
+
+                        &:first-child {
+
+                            width: 130px;
+                        }
+    
+                        &:last-child {
+    
+                            padding-right: 0;
+                        }
+
+                        a {
+    
+                            display: inline-block;
+                            color: #363636;
+                            margin-right: 50px;
+                            margin-bottom: 10px;
+        
+                            &:hover {
+        
+                                text-decoration: none;
+                            }
+                        }
+                    }
+    
+                    tr:last-child {
+    
+                        td {
+    
+                            padding-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        &:nth-child(even) {
+
+            .shops-page__item-image {
+
+                order: 2;
+                margin-right: 0;
+            }
+
+            .shops-page__item-text {
+
+                order: 1;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:780px) {
+
+    .shops-page {
+
+        margin-top: 50px;
+
+        &__title-desc {
+
+            text-align: left;
+        }
+
+        &__desc {
+
+            margin-top: 20px;
+        }
+
+        &__map {
+
+            margin-top: 40px;
+        }
+
+        &__tabs {
+
+            margin-top: 40px;
+        }
+
+        &__items {
+
+            margin-top: 80px;
+        }
+
+        &__item {
+
+            position: relative;
+            flex-wrap: wrap;
+            margin-bottom: 80px;
+
+            &-title {
+
+                display: block;
+                position: absolute;
+                bottom: calc(100% - 10px);
+                font-weight: bold;
+                font-size: 30px;
+                line-height: 30px;
+                text-transform: uppercase;
+            }
+
+            &-image {
+
+                margin-right: 0;
+                margin-bottom: 10px;
+                order: 1 !important;
+            }
+
+            &-text {
+
+                width: 100%;
+                margin-top: 0;
+                order: 2 !important;
+
+                &-title {
+
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:420px) {
+
+    .shops-page {
+
+        &__item {
+
+            &-title {
+
+                font-size: 25px;
+                line-height: 25px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:360px) {
+
+    .shops-page {
+
+        &__item {
+
+            &-title {
+
+                font-size: 20px;
+                line-height: 20px;
+            }
+        }
+    }
+}

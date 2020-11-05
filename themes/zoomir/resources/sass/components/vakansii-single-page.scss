@@ -1,0 +1,369 @@
+.vakansii-single-page {
+
+    &__about {
+
+        margin-top: 130px;
+        max-width: 748px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 18px;
+
+        &-text {
+
+            padding: 70px;
+            background-color: #fff;
+            border-radius: 10px;
+            position: relative;
+            margin-bottom: 50px;
+
+            &-title {
+
+                position: absolute;
+                bottom: calc(100% - 20px);
+                width: 100%;
+                left: 0;
+                font-weight: bold;
+                font-size: 30px;
+                text-transform: uppercase;
+                padding: 0 70px;
+                box-sizing: border-box;
+
+                &::before {
+
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    height: 70px;
+                    top: -60px;
+                    left: -100px;
+                    background-image: url('../resources/imgs/vakansii-single-page-about-text-title-vector-maykop.svg');
+                    background-repeat: no-repeat;
+                    background-position: 0 0;
+                    background-size: auto 100%;
+                }
+            }
+
+            &-table {
+
+                width: 100%;
+                border: 0;
+                border-spacing: 0;
+
+                tr {
+
+                    td {
+
+                        padding-bottom: 20px;
+                        vertical-align: top;
+
+                        &:nth-child(1) {
+    
+                            padding-right: 40px;
+                        }
+                    }
+
+                    &:last-child {
+
+                        td {
+
+                            padding-bottom: 0;
+                        }
+                    }
+                }
+
+                &-mobile {
+
+                    display:  none;
+
+                    tr {
+
+                        td, th {
+
+                            text-align: left;
+                            padding-right: 0 !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-phone {
+
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+
+            &-right {
+
+                font-weight: bold;
+                font-size: 30px;
+                text-transform: uppercase;
+                margin-left: 30px;
+            }
+        }
+    }
+
+    &__send {
+
+        max-width: 748px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+
+        &-title {
+
+            font-weight: bold;
+            font-size: 30px;
+            text-transform: uppercase;
+            color: #C2000D;
+            margin-bottom: 5px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        &-form {
+
+            margin-left: 20px;
+            margin-right: 20px;
+            border: 1px solid #C2000D;
+            border-radius: 10px;
+            padding: 50px 50px 20px 50px;
+
+            form {
+
+                .vakansii-single-page__send-form-item {
+
+                    margin-bottom: 20px;
+
+                    &:last-child {
+
+                        margin-bottom: 0;
+                    }
+
+                    &_btn {
+
+                        text-align: right;
+
+                        button {
+
+                            border: 1px solid #C2000D;
+                        }
+                    }
+
+                    input[type="text"] {
+
+                        border: 0;
+                        padding: 0;
+                        background: transparent;
+                        border-bottom: 1px solid #363636;
+                        width: 100%;
+                    }
+
+                    input[type="file"] {
+                    
+                        display: none;
+                    }
+
+                    label {
+
+                        text-decoration: underline;
+                        cursor: pointer;
+
+                        &:hover {
+
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:780px) {
+
+    .vakansii-single-page {
+
+        &__about {
+
+            margin-top: 150px;
+    
+            &-text {
+
+                padding: 20px;
+    
+                &-title {
+
+                    bottom: calc(100% + 20px);
+                    padding: 0;
+    
+                    &::before {
+
+                        left: 0;
+                        background-position: 0 0;
+                        background-size: auto 100%;
+                    }
+                }
+
+                &-table {
+
+                    &-desctop {
+
+                        display: none;
+                    }
+
+                    &-mobile {
+
+                        display: table;
+                    }
+                }
+            }
+
+            &-phone {
+
+                flex-wrap: wrap;
+
+                &-left {
+
+                    width: 100%;
+                }
+
+                &-right {
+
+                    margin-left: 0;
+                }
+            }
+        }
+
+        &__send {
+
+            &-title {
+
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            &-form {
+
+                margin-left: 0;
+                margin-right: 0;
+                padding: 20px;
+
+                form {
+
+                    .vakansii-single-page__send-form-item {
+
+                        &_btn {
+
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:540px) {
+
+    .vakansii-single-page {
+
+        &__about {
+    
+            &-text {
+    
+                &-title {
+
+                    font-size: 25px;
+                }
+            }
+
+            &-phone {
+
+                &-right {
+
+                    font-size: 25px;
+                }
+            }
+        }
+
+        &__send {
+
+            &-title {
+
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    .vakansii-single-page {
+
+        &__about {
+    
+            &-text {
+    
+                &-title {
+
+                    font-size: 22px;
+                }
+            }
+
+            &-phone {
+
+                &-right {
+
+                    font-size: 22px;
+                }
+            }
+        }
+
+        &__send {
+
+            &-title {
+
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:420px) {
+
+    .vakansii-single-page {
+
+        &__about {
+    
+            &-text {
+    
+                &-title {
+
+                    font-size: 20px;
+                }
+            }
+
+            &-phone {
+
+                &-right {
+
+                    font-size: 20px;
+                }
+            }
+        }
+
+        &__send {
+
+            &-title {
+
+                font-size: 20px;
+            }
+        }
+    }
+}

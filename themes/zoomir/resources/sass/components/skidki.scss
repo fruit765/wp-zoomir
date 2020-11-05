@@ -1,0 +1,160 @@
+.skidki {
+
+    margin-top: 150px;
+
+    &__title {
+
+        display: inline-block;
+        text-align: right;
+        margin-bottom: 30px;
+
+        span {
+
+            color: #C2000D;
+        }
+    }
+
+    &__items {
+
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+
+        display: flex;
+        align-items: center;
+
+        &-title {
+
+            display: none;
+        }
+
+        &-procent {
+
+            font-weight: bold;
+            font-size: 30px;
+            color: #C2000D;
+            width: 140px;
+            height: 140px;
+            line-height: 140px;
+            text-align: center;
+            margin-right: 15px;
+            position: relative;
+
+            &::before {
+
+                content: '';
+                display: block;
+                position: absolute;
+                width: 140px;
+                height: 140px;
+                top: 0;
+                left: 0;
+                background-image: url('../resources/imgs/skidki-item-procent-image1.svg');
+                background-repeat: no-repeat;
+                background-position: -20px -15px;
+                background-size: 130px auto;
+            }
+
+            &::after {
+
+                content: '';
+                display: block;
+                position: absolute;
+                width: 140px;
+                height: 140px;
+                top: 0;
+                left: 0;
+                background-image: url('../resources/imgs/skidki-item-procent-image2.svg');
+                background-repeat: no-repeat;
+                background-position: 30px 25px;
+                background-size: 130px auto;
+            }
+        }
+
+        &:nth-child(2) {
+
+            .skidki__item-procent {
+
+                &::before {
+
+                    background-image: url('../resources/imgs/skidki-item-procent-image3.svg');
+                    background-position: -15px -5px;
+                    background-size: 140px auto;
+                }
+
+                &::after {
+
+                    background-image: url('../resources/imgs/skidki-item-procent-image4.svg');
+                    background-position: 15px 18px;
+                    background-size: 140px auto;
+                }
+            }
+        }
+
+        &-text {
+
+            &-title {
+
+                font-weight: bold;
+                font-size: 30px;
+                margin-bottom: 15px;
+            }
+
+            &-desc {
+
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:780px) {
+
+    .skidki {
+
+        margin-top: 50px;
+
+        &__item {
+
+            padding-top: 30px;
+            position: relative;
+            width: 100%;
+            margin-bottom: 30px;
+
+            &:last-child {
+
+                margin-bottom: 0;
+            }
+
+            &-title {
+
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 30px;
+                line-height: 30px;
+                top: 0;
+                left: 0;
+                font-size: 25px;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+            &-procent {
+
+                flex-shrink: 0;
+            }
+
+            &-text {
+
+                &-title {
+
+                    display: none;
+                }
+            }
+        }
+    }
+}

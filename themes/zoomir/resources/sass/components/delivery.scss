@@ -1,0 +1,246 @@
+.delivery {
+
+    max-width: calc(50% + 600px);
+    margin-left: auto;
+    background-image: url('../resources/imgs/delivery-background.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: auto 100%;
+    padding-top: 150px;
+    padding-bottom: 120px;
+    max-height: 296px;
+    padding-left: 20px;
+    margin-top: 100px;
+
+    &__title {
+
+        position: relative;
+        display: inline-block;
+
+        span {
+
+            font-size: 30px;
+            color: #C2000D;
+            display: block;
+        }
+
+        &::before {
+
+            content: '';
+            display: block;
+            position: absolute;
+            width: 140px;
+            height: 190px;
+            top: -70px;
+            left: -120px;
+            background-image: url('../resources/imgs/delivery-vector.svg');
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            background-size: 140px auto;
+        }
+
+        &::after {
+
+            content: '';
+            display: block;
+            position: absolute;
+            width: 380px;
+            height: 370px;
+            top: -150px;
+            right: -180px;
+            background-image: url('../resources/imgs/delivery-round-text.svg');
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            background-size: 380px auto;
+        }
+    }
+
+    &__desc {
+
+        font-size: 18px;
+        margin: 30px 0;
+    }
+
+    &__more {
+
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width:780px) {
+
+    .delivery {
+
+        margin-top: 50px;
+        padding-bottom: 300px;
+        background-size: auto 440px;
+        background-position: right bottom;
+        max-height: none;
+        padding-top: 50px;
+
+        &__title {
+
+            line-height: 80px;
+
+            span {
+
+                font-size: 50px;
+                line-height: 50px;
+            }
+    
+            &::after {
+    
+                width: 215px;
+                height: 190px;
+                top: -80px;
+                right: -30px;
+                background-image: url('../resources/imgs/delivery-round-text-mobile.svg');
+                background-size: 215px auto;
+            }
+        }
+
+        &__desc {
+
+            padding-right: 20px;
+        }
+    }
+}
+
+@media screen and (max-width:670px) {
+
+    .delivery {
+
+        padding-bottom: 250px;
+        background-size: auto 390px;
+
+        &__title {
+
+            line-height: 70px;
+
+            &::before {
+
+                top: -80px;
+            }
+
+            span {
+
+                font-size: 45px;
+                line-height: 45px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:540px) {
+
+    .delivery {
+
+        padding-bottom: 200px;
+        background-size: auto 340px;
+
+        &__title {
+
+            line-height: 60px;
+
+            span {
+
+                font-size: 40px;
+                line-height: 40px;
+            }
+
+            &::before {
+
+                top: -90px;
+            }
+    
+            &::after {
+    
+                right: -40px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    .delivery {
+
+        padding-bottom: 150px;
+        background-size: auto 240px;
+
+        &__title {
+
+            line-height: 50px;
+
+            span {
+
+                font-size: 35px;
+                line-height: 35px;
+            }
+
+            &::before {
+
+                top: -100px;
+            }
+    
+            &::after {
+    
+                right: -40px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:420px) {
+
+    .delivery {
+
+        padding-bottom: 50px;
+        background-size: auto 150px;
+
+        &__title {
+
+            line-height: 45px;
+
+            span {
+
+                font-size: 30px;
+                line-height: 30px;
+            }
+
+            &::before {
+
+                top: -110px;
+            }
+    
+            &::after {
+    
+                right: -50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:360px) {
+
+    .delivery {
+
+        background-size: auto 140px;
+
+        &__title {
+
+            line-height: 40px;
+
+            span {
+
+                font-size: 25px;
+                line-height: 25px;
+            }
+
+            &::before {
+
+                top: -120px;
+            }
+        }
+    }
+}
