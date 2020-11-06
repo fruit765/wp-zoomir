@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.5.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-10-29 21:17:33+0000\n"
+"PO-Revision-Date: 2020-11-05 15:11:34+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1664,7 +1664,7 @@ msgstr "https://wordpress.org/support/article/debugging-a-wordpress-network/"
 
 #: wp-includes/formatting.php:4857
 msgid "https://wordpress.org/support/article/using-permalinks/#choosing-your-permalink-structure"
-msgstr "https://wordpress.org/support/article/using-permalinks/#choosing-your-permalink-structure"
+msgstr "https://ru.wordpress.org/support/article/using-permalinks/#%d0%b2%d1%8b%d0%b1%d0%be%d1%80-%d1%81%d1%82%d1%80%d1%83%d0%ba%d1%82%d1%83%d1%80%d1%8b-%d0%bf%d0%be%d1%81%d1%82%d0%be%d1%8f%d0%bd%d0%bd%d1%8b%d1%85-%d1%81%d1%81%d1%8b%d0%bb%d0%be%d0%ba"
 
 #: wp-includes/link-template.php:2585 wp-includes/link-template.php:2667
 #: wp-includes/link-template.php:2735

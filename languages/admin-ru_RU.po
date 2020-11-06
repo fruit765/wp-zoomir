@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.5.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-11-04 13:15:05+0000\n"
+"PO-Revision-Date: 2020-11-05 18:13:58+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1413,15 +1413,15 @@ msgstr "Результаты всё ещё загружаются&hellip;"
 
 #: wp-admin/options-permalink.php:400
 msgid "<a href=\"https://wordpress.org/support/article/nginx/\">Documentation on Nginx configuration</a>."
-msgstr "<a href=\"https://wordpress.org/support/article/nginx/\">Документация по настройке конфигурации NGINX</a>."
+msgstr "<a href=\"https://ru.wordpress.org/support/article/nginx/\">Документация по настройке конфигурации NGINX</a>."
 
 #: wp-admin/options-permalink.php:199
 msgid "https://wordpress.org/support/article/using-permalinks/"
-msgstr "https://codex.wordpress.org/%D0%A7%D0%90%D0%92%D0%9E/%D0%A1%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B0_%D0%BF%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%BD%D1%8B%D1%85_%D1%81%D1%81%D1%8B%D0%BB%D0%BE%D0%BA"
+msgstr "https://ru.wordpress.org/support/article/using-permalinks/"
 
 #: wp-admin/options-permalink.php:61
 msgid "<a href=\"https://wordpress.org/support/article/using-permalinks/\">Documentation on Using Permalinks</a>"
-msgstr "<a href=\"https://wordpress.org/support/article/using-permalinks/\">Документация об использовании постоянных ссылок</a>"
+msgstr "<a href=\"https://ru.wordpress.org/support/article/using-permalinks/\">Документация об использовании постоянных ссылок</a>"
 
 #: wp-admin/options-permalink.php:60
 msgid "<a href=\"https://wordpress.org/support/article/settings-permalinks-screen/\">Documentation on Permalinks Settings</a>"
