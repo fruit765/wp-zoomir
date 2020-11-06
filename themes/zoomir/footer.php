@@ -1,15 +1,15 @@
         <footer class="footer">
             <a href="/"class="footer__logo"><img src="<?php echo get_template_directory_uri(); ?>/resources/imgs/header-logo.png"></a>
             <div class="footer__text1">
-                <a href="#">Каталог</a>
-                <a href="#">Магазины</a>
-                <a href="#">Вакансии</a>
-                <a href="#">Компания</a>
+                <a href="/catalog">Каталог</a>
+                <a href="/shop-categories/majkop">Магазины</a>
+                <a href="/vakansii">Вакансии</a>
+                <a href="/kompaniya">Компания</a>
             </div>
             <div class="footer__text2">
-                <a href="#">Доставка</a>
+                <a href="/dostavka">Доставка</a>
                 <a href="#">Скидки</a>
-                <a href="#">Акции</a>
+                <a href="/akcii">Акции</a>
             </div>
             <div class="footer__contacts">
                 <div class="footer__contacts-email">@mail</div>
