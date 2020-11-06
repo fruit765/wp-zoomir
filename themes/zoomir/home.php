@@ -3,7 +3,7 @@
             <div class="main-block__text">
                 <div class="main-block__title">Зоомир</div>
                 <div class="main-block__desc">Более 10 лет с заботой о ваших любимцах</div>
-                <button class="main-block__btn btn" type="button">актульные акции</button>
+                <a href="/akcii" class="main-block__btn btn" type="button">актульные акции</a>
             </div>
         </div>
 
@@ -13,17 +13,22 @@
                 <div class="akcii__items-wrapper">
                     <?php $loop = new WP_Query(array('posts_per_page' => 0, 'post_type' => 'akcii', 'orderby' => 'id', 'order' => 'DESC')); ?>
                     <?php while ($loop->have_posts()) { $loop->the_post() ?>
-                        <a href="#" class="akcii__item">
-                            <div class="akcii__item-procent"><?php echo get_field('proczent', get_the_ID()); ?></div>
-                            <div class="akcii__item-image">
-                                <img src="<?php echo wp_get_attachment_image_url(get_post_meta(get_the_ID(), '_thumbnail_id', true), 'full'); ?>">
-                            </div>
-                            <div class="akcii__item-text">
-                                <div class="akcii__item-title"><?php the_title(); ?></div>
-                                <div class="akcii__item-desc"><?php the_content(); ?></div>
-                                <div class="akcii__item-more">Подробнее >></div>
-                            </div>
-                        </a>
+                        <?php
+                            $is_active = get_field('is_active', get_the_ID());
+                        ?>
+                        <?php if ($is_active && $is_active[0] ==='Да') { ?>
+                            <a href="#" class="akcii__item">
+                                <div class="akcii__item-procent"><?php echo get_field('proczent', get_the_ID()); ?></div>
+                                <div class="akcii__item-image">
+                                    <img src="<?php echo wp_get_attachment_image_url(get_post_meta(get_the_ID(), '_thumbnail_id', true), 'full'); ?>">
+                                </div>
+                                <div class="akcii__item-text">
+                                    <div class="akcii__item-title"><?php the_title(); ?></div>
+                                    <div class="akcii__item-desc"><?php the_content(); ?></div>
+                                    <div class="akcii__item-more">Подробнее >></div>
+                                </div>
+                            </a>
+                        <?php } ?>
                     <?php } wp_reset_query(); ?>
                 </div>
             </div>
