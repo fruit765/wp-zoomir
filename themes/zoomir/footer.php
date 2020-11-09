@@ -23,5 +23,11 @@
         </footer>
 
         <?php wp_footer(); ?>
+        <script>
+            var ymaps;
+        </script>
+        <?php if (is_tax('shop-categories')) { ?>
+            <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=6c63b2b7-912b-40f2-a252-2cbdc56042b9" type="text/javascript"></script>
+        <?php } ?>
     </body>
 </html>

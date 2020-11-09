@@ -9,9 +9,7 @@
             </div>
         </div>
 
-        <div class="shops-page__map">
-            <img src="<?php echo get_template_directory_uri() ?>/resources/imgs/map.png">
-        </div>
+        <div id="map" class="shops-page__map"></div>
 
         <div class="shops-page__tabs">
             <a href="/shop-categories/majkop" class="shops-page__tab<?php if (get_queried_object()->name === 'Майкоп') echo ' shops-page__tab_active'; ?>">Майкоп</a>
@@ -19,10 +17,20 @@
         </div>
 
         <div class="shops-page__items">
+            <?php
+                $points_arr = [];
+                $num = 1;
+            ?>
             <?php $loop = new WP_Query(array('posts_per_page' => 0, 'post_type' => 'shop', 'tax_query' => array(array('taxonomy' => 'shop-categories', 'terms'=> get_queried_object()->term_id)), 'orderby' => 'id', 'order' => 'DESC')); ?>
             <?php while ($loop->have_posts()) { $loop->the_post() ?>
-                <a href="#" class="shops-page__item">
-                    <div class="shops-page__item-title"><?php the_title(); ?></div>
+                <?php
+                    $points_arr[] = [
+                        'long' => get_field('long', get_the_ID()),
+                        'lat' => get_field('lat', get_the_ID()),
+                    ];
+                ?>
+                <a href="#" class="shops-page__item<?php if ($num === 1) {echo ' shops-page__item_active'; $num++;} ?>">
+                    <div class="shops-page__item-title"><span><?php the_title(); ?></span></div>
                     <div class="shops-page__item-image">
                         <img src="<?php echo wp_get_attachment_image_url(get_post_meta(get_the_ID(), '_thumbnail_id', true), 'full'); ?>">
                     </div>
@@ -34,6 +42,9 @@
                     </div>
                 </a>
             <?php } wp_reset_query(); ?>
+            <script>
+                var pointsArr = <?php echo json_encode($points_arr); ?>;
+            </script>
         </div>
     </div>
 <?php get_footer(); ?>
