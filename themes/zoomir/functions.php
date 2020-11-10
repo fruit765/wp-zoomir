@@ -19,6 +19,7 @@
             wp_enqueue_script('mousewheel', get_template_directory_uri().'/js/libraries/jquery.mousewheel.min.js', false, false, true);
             wp_enqueue_script('compatibility', get_template_directory_uri().'/js/libraries/jquery.easing.compatibility.js', false, false, true);
             wp_enqueue_script('easing', get_template_directory_uri().'/js/libraries/jquery.easing.min.js', false, false, true);
+            wp_enqueue_script('maskedinput', get_template_directory_uri().'/js/libraries/maskedinput.js', false, false, true);
         }
 	}    
     add_action('wp_enqueue_scripts', 'jquery_script_method');

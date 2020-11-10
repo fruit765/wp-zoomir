@@ -48,42 +48,49 @@
 
             &-table {
 
-                width: 100%;
-                border: 0;
-                border-spacing: 0;
+                .wp-block-table {
 
-                tr {
+                    margin: 0;
 
-                    td {
+                    & + .wp-block-table {
 
-                        padding-bottom: 20px;
-                        vertical-align: top;
+                        display: none;
+                    }
 
-                        &:nth-child(1) {
+                    table {
+
+                        width: 100%;
+                        border: 0;
+                        border-spacing: 0;
     
-                            padding-right: 40px;
-                        }
-                    }
+                        tr {
+    
+                            td {
+        
+                                padding-bottom: 20px;
+                                vertical-align: top;
+        
+                                &:nth-child(1) {
+            
+                                    padding-right: 40px;
+                                }
+                            }
+        
+                            &:last-child {
+        
+                                td {
+        
+                                    padding-bottom: 0;
+                                }
+                            }
 
-                    &:last-child {
+                            &:nth-child(odd) {
 
-                        td {
+                                td {
 
-                            padding-bottom: 0;
-                        }
-                    }
-                }
-
-                &-mobile {
-
-                    display:  none;
-
-                    tr {
-
-                        td, th {
-
-                            text-align: left;
-                            padding-right: 0 !important;
+                                    padding-bottom: 0;
+                                }
+                            }
                         }
                     }
                 }
@@ -155,7 +162,7 @@
                         }
                     }
 
-                    input[type="text"] {
+                    input[type="text"], input[type="tel"] {
 
                         border: 0;
                         padding: 0;
@@ -178,6 +185,16 @@
 
                             text-decoration: none;
                         }
+                    }
+                }
+
+                .vakansii-single-page__send-form-message {
+
+                    margin-bottom: 20px;
+
+                    ul {
+
+                        margin: 0;
                     }
                 }
             }
@@ -212,14 +229,14 @@
 
                 &-table {
 
-                    &-desctop {
+                    .wp-block-table {
 
                         display: none;
-                    }
 
-                    &-mobile {
+                        & + .wp-block-table {
 
-                        display: table;
+                            display: block;
+                        }
                     }
                 }
             }
