@@ -36,12 +36,12 @@
                         <div class="mobile-menu__close"></div>
                     </div>
                     <div class="mobile-menu__items">
-                        <a href="#" class="mobile-menu__item">Каталог</a>
-                        <a href="#" class="mobile-menu__item">Акции</a>
-                        <a href="#" class="mobile-menu__item">Магазины</a>
-                        <a href="#" class="mobile-menu__item">Доставка</a>
-                        <a href="#" class="mobile-menu__item">Вакансии</a>
-                        <a href="#" class="mobile-menu__item">Компания</a>
+                        <a href="/catalog" class="mobile-menu__item">Каталог</a>
+                        <a href="/akcii" class="mobile-menu__item">Акции</a>
+                        <a href="/shop-categories/majkop" class="mobile-menu__item">Магазины</a>
+                        <a href="/dostavka" class="mobile-menu__item">Доставка</a>
+                        <a href="/vakansii" class="mobile-menu__item">Вакансии</a>
+                        <a href="/kompaniya" class="mobile-menu__item">Компания</a>
                     </div>
                     <div class="mobile-menu__social">
                         <a href="#" class="mobile-menu__social-inst"></a>

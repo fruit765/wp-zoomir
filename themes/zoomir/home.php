@@ -49,7 +49,7 @@
                     <?php } ?>
                 <?php } ?>
             </div>
-            <button class="catalog__btn btn">В каталог</button>
+            <a href="/catalog" class="catalog__btn btn">В каталог</a>
         </div>
 
         <div class="skidki section">
@@ -77,7 +77,7 @@
         <div class="delivery">
             <div class="delivery__title title"><span>Бесплатная</span>доставка</div>
             <div class="delivery__desc">Бесплатно доставляем по Майкопу и Белореченску.</div>
-            <button class="delivery__more btn">Подробнее</button>
+            <a href="/dostavka" class="delivery__more btn">Подробнее</a>
         </div>
 
         <div class="instagramm">

@@ -5,7 +5,7 @@
             <div class="catalog-categories-page__desc-text">
                 <?php echo get_queried_object()->description; ?>
             </div>
-            <button class="catalog-categories-page__desc-btn btn">Магазины</button>
+            <a href="/shop-categories/majkop" class="catalog-categories-page__desc-btn btn">Магазины</a>
         </div>
         <div class="catalog-categories-page__categories">
             <?php if ($categories = get_categories(array('taxonomy' => 'catalog-categories', 'parent' => get_queried_object()->term_id, 'hide_empty' => 1, 'orderby' => 'id', 'order' => 'ASC'))) { ?>

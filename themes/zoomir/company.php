@@ -13,10 +13,28 @@ Template Post Type: page
                     <span>1997</span> Год основания
                 </div>
                 <div class="company-page__inform-nums-item">
-                    <span>9 магазинов</span> в Майкопе
+                    <?php
+                        $loop = new WP_Query(array('posts_per_page' => 0, 'post_type' => 'shop', 'tax_query' => array(array('taxonomy' => 'shop-categories', 'field' => 'name', 'terms'=> 'Майкоп')), 'orderby' => 'id', 'order' => 'DESC'));
+                        $count = 0;
+                        while ($loop->have_posts()) {
+                            $loop->the_post();
+                            $count++;
+                        }
+                        wp_reset_query();
+                    ?>
+                    <span><?php echo $count; ?> магазинов</span> в Майкопе
                 </div>
                 <div class="company-page__inform-nums-item">
-                    <span>3 магазина</span> в Белореченске
+                    <?php
+                        $loop = new WP_Query(array('posts_per_page' => 0, 'post_type' => 'shop', 'tax_query' => array(array('taxonomy' => 'shop-categories', 'field' => 'name', 'terms'=> 'Белореченск')), 'orderby' => 'id', 'order' => 'DESC'));
+                        $count = 0;
+                        while ($loop->have_posts()) {
+                            $loop->the_post();
+                            $count++;
+                        }
+                        wp_reset_query();
+                    ?>
+                    <span><?php echo $count; ?> магазина</span> в Белореченске
                 </div>
             </div>
             <div class="company-page__inform-image">

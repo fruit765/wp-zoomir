@@ -77,6 +77,8 @@ $(document).ready(() => {
 
             e.preventDefault();
 
+            myMap.setBounds(myMap.geoObjects.getBounds(), {checkZoomRange:true, zoomMargin: [20, 20, 20, 20]});
+
             $('.shops-page__item').each((index, element) => {
                 if (e.currentTarget === element) {
                     id = index;
