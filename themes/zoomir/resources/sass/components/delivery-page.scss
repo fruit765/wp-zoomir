@@ -40,8 +40,8 @@
 
             &-right {
 
-                font-weight: bold;
-                font-size: 30px;
+                font-family: "Aqum";
+                font-size: 22px;
                 text-transform: uppercase;
 
                 span {
@@ -60,7 +60,7 @@
         &-phone {
 
             font-size: 18px;
-            padding-right: 150px;
+            padding-right: 130px;
             position: relative;
 
             &::before {
@@ -97,9 +97,9 @@
 
                 text-transform: uppercase;
                 color: #C2000D;
-                font-weight: bold;
-                font-size: 30px;
-                line-height: 30px;
+                font-family: "Aqum";
+                font-size: 22px;
+                line-height: 22px;
                 display: block;
                 margin-top: 10px;
             }
@@ -190,8 +190,8 @@
                     span {
 
                         display: block;
-                        font-weight: bold;
-                        font-size: 30px;
+                        font-family: "Aqum";
+                        font-size: 25px;
                         text-transform: uppercase;
                     }
                 }
@@ -239,8 +239,8 @@
                 content: '';
                 display: block;
                 position: absolute;
-                width: 434px;
-                height: 92px;
+                width: 400px;
+                height: 86px;
                 top: 60px;
                 left: calc(100% - 40px);
                 background-image: url('../resources/imgs/delivery-page-payment-title-vector.svg');
@@ -274,8 +274,8 @@
 
             &-right {
 
-                font-weight: bold;
-                font-size: 30px;
+                font-family: "Aqum";
+                font-size: 25px;
                 text-transform: uppercase;
                 span {
 
@@ -326,8 +326,8 @@
                 background-repeat: no-repeat;
                 background-position: 0 0;
                 background-size: auto 100%;
-                font-weight: bold;
-                font-size: 36px;
+                font-family: "Aqum";
+                font-size: 30px;
                 color: #C2000D;
 
                 &::before {
@@ -392,7 +392,7 @@
                     margin-top: 130px;
                     text-align: right;
                     padding-right: 0;
-                    padding-left: 150px;
+                    padding-left: 130px;
 
                     &::before {
 
@@ -611,7 +611,8 @@
 
                 span {
 
-                    font-size: 25px;
+                    font-size: 20px;
+                    line-height: 20px;
                 }
 
                 &:nth-child(1) {
@@ -671,9 +672,20 @@
 
             &-phone {
 
+                &:nth-child(1) {
+
+                    padding-right: 80px;
+                }
+
+                &:nth-child(2) {
+
+                    padding-left: 80px;
+                }
+
                 span {
 
-                    font-size: 20px;
+                    font-size: 18px;
+                    line-height: 18px;
                 }
             }
         }

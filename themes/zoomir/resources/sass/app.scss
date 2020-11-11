@@ -1,6 +1,18 @@
+@font-face {
+	font-family: "Aqum";
+	src: url("../fonts/aqum/Aqum.eot");
+	src: url("../fonts/aqum/Aqum.eot?#iefix") format("embedded-opentype"),
+		 url("../fonts/aqum/Aqum.woff") format("woff"),
+		 url("../fonts/aqum/Aqum.ttf") format("truetype"),
+		 url("../fonts/aqum/Aqum.svg#GraphikLCG-Light") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
 html {
 
     font-size: 16px;
+    font-family: "Arial";
 }
 
 body {
@@ -25,14 +37,14 @@ html.mobile-menu_open, body.mobile-menu_open {
 
 .title {
 
-    font-weight: bold;
+    font-family: "Aqum";
     font-size: 80px;
     text-transform: uppercase;
 }
 
 .page-title {
 
-    font-weight: bold;
+    font-family: "Aqum";
     font-size: 120px;
     line-height: 120px;
     text-transform: uppercase;
