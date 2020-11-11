@@ -141,22 +141,16 @@ $(document).ready(() => {
                     }
 
                     switch(nameField) {
+
+                        case 'fio':
+        
+                            nameField = 'ФИО';
+            
+                            break;
                     
                         case 'phone':
             
                             nameField = 'Телефон';
-            
-                            break;
-
-                        case 'name':
-        
-                            nameField = 'Имя';
-            
-                            break;
-
-                        case 'text':
-        
-                            nameField = 'Комментарии или пожелания';
             
                             break;
 
@@ -264,7 +258,7 @@ $(document).ready(() => {
             
                             if (response) {
             
-                                self.errors = JSON.parse(response);
+                                self.errors = response;
                             }
             
                             self.getMsg();

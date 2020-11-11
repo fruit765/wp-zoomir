@@ -3,8 +3,8 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/mail-config.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/wp-content/vendor/autoload.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/wp-content/themes/zoomir/mail-config.php';
 
 $form_validator = new FormValidator($host, $user_name, $password, $secure, $port, $send_to);
 
@@ -35,21 +35,15 @@ class FormValidator{
 
             switch($name_field) {
                 
+                case 'fio':
+    
+                    $name_field = 'ФИО';
+    
+                    break;
+
                 case 'phone':
-    
+
                     $name_field = 'Телефон';
-    
-                    break;
-
-                case 'name':
-
-                    $name_field = 'Имя';
-    
-                    break;
-
-                case 'text':
-
-                    $name_field = 'Комментарии или пожелания';
     
                     break;
 
@@ -125,6 +119,23 @@ class FormValidator{
             }
         }
 
+        foreach ($_FILES as $key => $value){
+        
+            $raz = explode('.', $value['name'])[1];
+
+            if ($raz !== 'txt' && $raz !== 'doc' && $raz !== 'docx' && $raz !== 'xls' && $raz !== 'xlsx' && $raz !== 'pdf') {
+
+                $this->errors[] = 'Разрешение у файла "Резюме" должно быть txt или doc, или docx, или xls, или xlsx, или pdf!';
+            }
+
+            if ($value['size'] > 2097152) {
+
+                $this->errors[] = 'Размер файла "Резюме" не должен превышать 2мб!';
+            }
+
+            $file = $value;
+        }
+
         if ($this->errors) {
 
             $this->viewErrors();
@@ -146,9 +157,9 @@ class FormValidator{
                 $mail->CharSet = 'UTF-8';
 
                 //Recipients
-                $mail->setFrom($user_name, 'Okno-Etalon');
-                $mail->addAddress($send_to, 'Okno-Etalon');
-                $mail->addReplyTo($user_name, 'Okno-Etalon');
+                $mail->setFrom($user_name, 'Zoomir');
+                $mail->addAddress($send_to, 'Zoomir');
+                $mail->addReplyTo($user_name, 'Zoomir');
 
                 //Content
                 $mail->isHTML(true);
@@ -158,15 +169,16 @@ class FormValidator{
 
                 $mail->Body    = $this->fields;
                 $mail->AltBody = $this->fields;
+                $mail->AddAttachment($file['tmp_name'], $file['name']);
 
                 $mail->send();
                
             } catch (Exception $e) {
 
                 $this->errors = ['Сообщениине не отправлено: ' . $mail->ErrorInfo];
-
-                $this->viewErrors();
             }
+
+            $this->viewErrors();
         }
     }
     
@@ -174,7 +186,7 @@ class FormValidator{
     
         if (!empty($value)) {
 
-            if (!preg_match('/^[0-9\+\(\)\-]{16}$/u', $value)) {
+            if (!preg_match('/^[0-9\+\(\)\-\s]{21}$/u', $value)) {
                 
                 $this->errors[] = "Поле \"$name_field\" не соответствует формату!";
             }

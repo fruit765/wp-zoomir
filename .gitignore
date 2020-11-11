@@ -3,3 +3,5 @@
 /mix-manifest.json
 /themes/zoomir/css
 /themes/zoomir/js
+/vendor
+/composer.lock
