@@ -830,7 +830,7 @@ INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALU
 (13, 1, 'wp_user_level', '10'),
 (14, 1, 'dismissed_wp_pointers', ''),
 (15, 1, 'show_welcome_panel', '1'),
-(16, 1, 'session_tokens', 'a:1:{s:64:\"eb7508a16878434f763fe174ddd8969d2d11408a1cdb5ef24f29e9053d573de3\";a:4:{s:10:\"expiration\";i:1605767160;s:2:\"ip\";s:12:\"192.10.0.193\";s:2:\"ua\";s:78:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:82.0) Gecko/20100101 Firefox/82.0\";s:5:\"login\";i:1604557560;}}'),
+(16, 1, 'session_tokens', 'a:1:{s:64:\"eb7508a16878434f763fe174ddd8969d2d11408a1cdb5ef24f29e9053d573de3\";a:4:{s:10:\"expiration\";i:1605767160;s:2:\"ip\";s:12:\"www.wp-zoomir.ru\";s:2:\"ua\";s:78:\"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:82.0) Gecko/20100101 Firefox/82.0\";s:5:\"login\";i:1604557560;}}'),
 (17, 1, 'wp_dashboard_quick_press_last_post_id', '65'),
 (18, 1, 'community-events-location', 'a:1:{s:2:\"ip\";s:10:\"192.10.0.0\";}'),
 (19, 1, 'managenav-menuscolumnshidden', 'a:5:{i:0;s:11:\"link-target\";i:1;s:11:\"css-classes\";i:2;s:3:\"xfn\";i:3;s:11:\"description\";i:4;s:15:\"title-attribute\";}'),
