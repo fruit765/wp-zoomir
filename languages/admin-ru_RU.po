@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.5.x - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-11-10 17:31:34+0000\n"
+"PO-Revision-Date: 2020-11-12 14:07:20+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -4250,7 +4250,7 @@ msgstr "Свежая версия WordPress доступна для обновл
 
 #: wp-admin/update-core.php:254
 msgid "https://wordpress.org/support/article/updating-wordpress/"
-msgstr "https://ru.wordpress.org/support/article/debugging-in-wordpress/"
+msgstr "https://ru.wordpress.org/support/article/updating-wordpress/"
 
 #. translators: 1: Documentation on WordPress backups, 2: Documentation on
 #. updating WordPress.
