@@ -21,29 +21,42 @@
 
     &__menu {
 
-        flex-grow: 1;
         display: flex;
-        justify-content: space-between;
-        margin: 0 90px;
+        justify-content: flex-start;
+        margin: 0 auto;
 
         &-item {
 
-            margin-right: 20px;
+            margin-right: 50px;
             color: #363636;
             text-decoration: none;
             padding-bottom: 8px;
+            position: relative;
 
             &:last-child {
 
                 margin-right: 0;
             }
 
-            &:hover {
+            &::before {
 
+                content: '';
+                position: absolute;
+                width: 88px;
+                height: 12px;
+                bottom: -2px;
+                left: 50%;
+                margin-left: -44px;
                 background-image: url('../resources/imgs/header-menu-line.svg');
                 background-repeat: no-repeat;
-                background-position: center bottom;
+                background-position: 0 0;
                 background-size: 100% auto;
+                display: none;
+            }
+
+            &:hover::before {
+
+                display: block;
             }
         }
     }
@@ -78,7 +91,10 @@
 
         &__menu {
 
-            margin: 0 40px;
+            &-item {
+
+                margin-right: 20px;
+            }
         }
     }
 }

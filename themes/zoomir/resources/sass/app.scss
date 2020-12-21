@@ -50,6 +50,12 @@ html.mobile-menu_open, body.mobile-menu_open {
     text-transform: uppercase;
 }
 
+.page-wrapper {
+
+    max-width: 1640px;
+    margin: 0 auto;
+}
+
 @media screen and (max-width:780px) {
 
     .page-title {

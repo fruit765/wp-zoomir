@@ -18,7 +18,7 @@ mix.js('themes/zoomir/resources/js/app.js', 'themes/zoomir/js')
       processCssUrls: false,
    })
    .browserSync({
-      proxy: 'www.wp-zoomir.ru',
+      proxy: 'zoomir-wp.ru',
       files: [
          'themes/zoomir/css/{*,**/*}.css',
          'themes/zoomir/js/{*,**/*}.js',
