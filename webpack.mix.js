@@ -14,11 +14,12 @@ const mix = require('laravel-mix');
 mix.js('themes/zoomir/resources/js/app.js', 'themes/zoomir/js')
    .sass('themes/zoomir/resources/sass/app.scss', 'themes/zoomir/css')
    .copyDirectory('themes/zoomir/resources/js/libraries', 'themes/zoomir/js/libraries')
+   .copyDirectory('themes/zoomir/resources/sass/libraries', 'themes/zoomir/css/libraries')
    .options({
       processCssUrls: false,
    })
    .browserSync({
-      proxy: 'zoomir-wp.ru',
+      proxy: '192.168.1.5',
       files: [
          'themes/zoomir/css/{*,**/*}.css',
          'themes/zoomir/js/{*,**/*}.js',
