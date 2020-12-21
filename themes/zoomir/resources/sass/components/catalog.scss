@@ -1,12 +1,23 @@
 .catalog {
 
     margin-top: 100px;
-    padding-top: 100px;
-    background-image: url('../resources/imgs/catalog-vector.svg');
-    background-repeat: no-repeat;
-    background-position: 0 15px;
-    background-size: auto 100px;
+    padding-top: 135px;
+    position: relative;
 
+    &::after {
+
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 135px;
+        top: 15px;
+        left: -100px;
+        background-image: url('../resources/imgs/catalog-vector.svg');
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: auto 100%;
+    }
 
     &__desc {
 
@@ -59,6 +70,17 @@
                 width: 100%;
                 max-width: 380px;
             }
+        }
+    }
+}
+
+@media screen and (max-width:1400px) {
+
+    .catalog {
+
+        &::after {
+
+            left: -20px;
         }
     }
 }
@@ -130,9 +152,16 @@
         background-image: url('../resources/imgs/catalog-vector-mobile.svg');
         background-size: 70% auto;
         background-position: 0 0;
+        background-repeat: no-repeat;
         margin-top: 50px;
+        padding-top: 100px;
         padding-bottom: 360px;
         position: relative;
+
+        &::after {
+
+            display: none;
+        }
 
         &__desc {
 
