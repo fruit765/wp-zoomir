@@ -19,7 +19,7 @@ mix.js('themes/zoomir/resources/js/app.js', 'themes/zoomir/js')
       processCssUrls: false,
    })
    .browserSync({
-      proxy: '192.168.1.5',
+      proxy: '178.217.156.6',
       files: [
          'themes/zoomir/css/{*,**/*}.css',
          'themes/zoomir/js/{*,**/*}.js',

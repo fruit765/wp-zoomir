@@ -81,18 +81,16 @@
         <div class="instagramm">
             <div class="instagramm__title title">
                 <div class="instagramm__title-wrapper">
-                    <span class="instagramm__title-span1">Наш</span><br><span class="instagramm__title-span2">Инстаграмм</span>
+                    <span class="instagramm__title-span1">Наш</span><br><span class="instagramm__title-span2">Инстаграм</span>
                 </div>
             </div>
             <div class="instagramm__items">
-                <div class="instagramm__items-wrapper">
-                    <?php $loop = new WP_Query(array('posts_per_page' => 0, 'post_type' => 'instagramm', 'orderby' => 'id', 'order' => 'DESC')); ?>
-                    <?php while ($loop->have_posts()) { $loop->the_post() ?>
-                        <div class="instagramm__item">
-                            <img src="<?php echo wp_get_attachment_image_url(get_post_meta(get_the_ID(), '_thumbnail_id', true), 'full'); ?>">
-                        </div>
-                    <?php } wp_reset_query(); ?>
-                </div>
+                <?php $loop = new WP_Query(array('posts_per_page' => 0, 'post_type' => 'instagramm', 'orderby' => 'id', 'order' => 'DESC')); ?>
+                <?php while ($loop->have_posts()) { $loop->the_post() ?>
+                    <div class="instagramm__item">
+                        <img src="<?php echo wp_get_attachment_image_url(get_post_meta(get_the_ID(), '_thumbnail_id', true), 'full'); ?>">
+                    </div>
+                <?php } wp_reset_query(); ?>
             </div>
         </div>
 <?php get_footer(); ?>
