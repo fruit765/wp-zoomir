@@ -1,11 +1,21 @@
 .header {
 
-    display: flex;
-    align-items: flex-end;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 25px 20px 0 20px;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    background-color: #F5EEE6;
+
+    &__wrapper {
+
+        display: flex;
+        align-items: flex-end;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 25px 20px 0 20px;
+        position: relative;
+    }
 
     &__logo {
 

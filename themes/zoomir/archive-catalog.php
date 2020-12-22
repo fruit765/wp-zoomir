@@ -2,7 +2,9 @@
     <div class="catalog-page section">
         <div class="catalog-page__title-desc-wrapper">
             <div class="catalog-page__title-desc">
-                <div class="catalog-page__title page-title">Каталог</div>
+                <div class="catalog-page__title page-title">
+                    <div class="catalog-page__title-wrapper">Каталог</div>
+                </div>
                 <div class="catalog-page__desc">
                     В наших магазинах собран широкий ассортимент товаров, ознакомится с основными из них вы можете в данном разделе. За более подробной информацией обратитесь к специалистам в наших магазинах.
                 </div>

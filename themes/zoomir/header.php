@@ -10,22 +10,24 @@
     <body>
         <div class="page-wrapper">
             <header class="header">
-                <div class="header__logo">
-                    <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/resources/imgs/header-logo.png"></a>
-                </div>
-                <div class="header__menu">
-                    <a href="/catalog" class="header__menu-item">Каталог</a>
-                    <a href="/akcii" class="header__menu-item">Акции</a>
-                    <a href="/shop-categories/majkop" class="header__menu-item">Магазины</a>
-                    <a href="/dostavka" class="header__menu-item">Доставка</a>
-                    <a href="/vakansii" class="header__menu-item">Вакансии</a>
-                    <a href="/kompaniya" class="header__menu-item">Компания</a>
-                </div>
-                <div class="header__phone">8 800 200 54 24</div>
-                <div class="header__mobile-menu-btn">
-                    <div class="header__mobile-menu-btn-line"></div>
-                    <div class="header__mobile-menu-btn-line"></div>
-                    <div class="header__mobile-menu-btn-line"></div>
+                <div class="header__wrapper">
+                    <div class="header__logo">
+                        <a href="/"><img src="<?php echo get_template_directory_uri(); ?>/resources/imgs/header-logo.png"></a>
+                    </div>
+                    <div class="header__menu">
+                        <a href="/catalog" class="header__menu-item">Каталог</a>
+                        <a href="/akcii" class="header__menu-item">Акции</a>
+                        <a href="/shop-categories/majkop" class="header__menu-item">Магазины</a>
+                        <a href="/dostavka" class="header__menu-item">Доставка</a>
+                        <a href="/vakansii" class="header__menu-item">Вакансии</a>
+                        <a href="/kompaniya" class="header__menu-item">Компания</a>
+                    </div>
+                    <div class="header__phone">8 800 200 54 24</div>
+                    <div class="header__mobile-menu-btn">
+                        <div class="header__mobile-menu-btn-line"></div>
+                        <div class="header__mobile-menu-btn-line"></div>
+                        <div class="header__mobile-menu-btn-line"></div>
+                    </div>
                 </div>
             </header>
 
