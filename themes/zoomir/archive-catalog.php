@@ -21,7 +21,7 @@
                         <div class="catalog-page__item-categories">
                             <?php if ($sub_categories = get_categories(array('taxonomy' => 'catalog-categories', 'parent' => $category->term_id, 'hide_empty' => 0, 'orderby' => 'id', 'order' => 'ASC'))) { ?>
                                 <?php foreach ($sub_categories as $sub_category) { ?>
-                                    <a href="#"><?php echo $sub_category->cat_name; ?></a>
+                                    <a href="<?php echo get_category_link($category->term_id); ?>#<?php echo $sub_category->cat_name; ?>"><?php echo $sub_category->cat_name; ?></a>
                                 <?php } ?>
                             <?php } ?>
                         </div>

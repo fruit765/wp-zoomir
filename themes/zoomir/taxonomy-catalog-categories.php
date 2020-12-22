@@ -11,6 +11,7 @@
             <?php if ($categories = get_categories(array('taxonomy' => 'catalog-categories', 'parent' => get_queried_object()->term_id, 'hide_empty' => 1, 'orderby' => 'id', 'order' => 'ASC'))) { ?>
                 <?php foreach ($categories as $category) { ?>
                     <div class="catalog-categories-page__category">
+                        <a class="catalog-categories-page__category-anchor" name="<?php echo $category->cat_name; ?>"></a>
                         <div class="catalog-categories-page__category-title section"><?php echo $category->cat_name; ?></div>
                         <div class="catalog-categories-page__category-items">
                             <div class="catalog-categories-page__category-items-wrapper">
