@@ -45,7 +45,7 @@
                 span {
 
                     font-family: "Aqum";
-                    font-size: 25px;
+                    font-size: 30px;
                     text-transform: uppercase;
                     color: #C2000D;
                 }
@@ -84,6 +84,7 @@
 
             max-width: 500px;
             padding-left: 8%;
+            line-height: 25px;
 
             p {
 
@@ -129,6 +130,11 @@
                 &-item {
 
                     margin-bottom: 15px;
+
+                    span {
+
+                        font-size: 20px;
+                    }
                 }
             }
 
