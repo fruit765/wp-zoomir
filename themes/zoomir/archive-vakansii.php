@@ -2,7 +2,11 @@
     <div class="vakansii-page">
         <div class="vakansii-page__title-desc-wrapper section">
             <div class="vakansii-page__title-desc">
-                <div class="vakansii-page__title page-title">Вакансии</div>
+                <div class="vakansii-page__title page-title">
+                    <div class="vakansii-page__title-wrapper">
+                        Вакансии
+                    </div>
+                </div>
                 <div class="vakansii-page__desc">
                     Мы всегда рады новым людям! В нашу дружную команду сейчас требуются эти специалисты.
                 </div>
