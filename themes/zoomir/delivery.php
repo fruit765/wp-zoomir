@@ -52,7 +52,8 @@ Template Post Type: page
                                 <span>Майкопу</span>
                             </div>
                             <div class="delivery-page__zones-item-text-col2">
-                                Заказ от 500₽ - бесплатная доставка. Мин заказ - 500₽.
+                                <span>Заказ от 500₽ - бесплатная доставка.</span>
+                                <span>Мин заказ - 500₽.</span>
                             </div>
                         </div>
                         <div class="delivery-page__zones-item-text-row">
@@ -64,7 +65,9 @@ Template Post Type: page
                                 </span>
                             </div>
                             <div class="delivery-page__zones-item-text-col2">
-                                Заказ от 1000₽ - бесплатная доставка, от 500₽ - 1000₽ доставка стоит 200₽. Мин заказ - 500₽.
+                                <span>Заказ от 1000₽ - бесплатная доставка,</span>
+                                <span class="delivery-page__zones-item-text-col2_otstup">от 500₽ - 1000₽ доставка стоит 200₽.</span>
+                                <span>Мин заказ - 500₽.</span>
                             </div>
                         </div>
                     </div>
@@ -83,7 +86,8 @@ Template Post Type: page
                                 <span>Белореченску</span>
                             </div>
                             <div class="delivery-page__zones-item-text-col2">
-                                Заказ от 500₽ - бесплатная доставка. Мин заказ - 500₽.
+                                <span>Заказ от 500₽ - бесплатная доставка.</span>
+                                <span>Мин заказ - 500₽.</span>
                             </div>
                         </div>
                         <div class="delivery-page__zones-item-text-row">
@@ -95,7 +99,9 @@ Template Post Type: page
                                 </span>
                             </div>
                             <div class="delivery-page__zones-item-text-col2">
-                                Заказ от 1000₽ - бесплатная доставка, от 500₽ - 1000₽ доставка стоит 200₽. Мин заказ - 500₽.
+                                <span>Заказ от 1000₽ - бесплатная доставка,</span>
+                                <span class="delivery-page__zones-item-text-col2_otstup">от 500₽ - 1000₽ доставка стоит 200₽.</span>
+                                <span>Мин заказ - 500₽.</span>
                             </div>
                         </div>
                     </div>

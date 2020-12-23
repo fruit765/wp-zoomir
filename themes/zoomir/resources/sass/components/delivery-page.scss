@@ -149,8 +149,9 @@
 
             &-image {
 
-                max-width: 381px;
+                flex-basis: 381px;
                 margin-right: 50px;
+                align-self: flex-start;
 
                 img {
 
@@ -169,11 +170,11 @@
             &-text {
 
                 font-size: 18px;
+                margin-left: auto;
 
                 &-row {
 
                     display: flex;
-                    align-items: flex-end;
                     margin-bottom: 30px;
 
                     &:last-child {
@@ -184,8 +185,9 @@
 
                 &-col1 {
 
-                    width: 250px;
-                    flex-shrink: 0;
+                    min-width: 200px;
+                    margin-right: 50px;
+                    align-self: flex-start;
 
                     span {
 
@@ -193,6 +195,27 @@
                         font-family: "Aqum";
                         font-size: 25px;
                         text-transform: uppercase;
+                    }
+
+                    & > span {
+
+                        margin-top: 17px;
+                    }
+                }
+
+                &-col2 {
+
+                    align-self: flex-end;
+
+                    span {
+
+                        display: block;
+                        line-height: 25px;
+                    }
+
+                    &_otstup {
+
+                        padding-left: 50px;
                     }
                 }
             }
@@ -215,10 +238,12 @@
                 .delivery-page__zones-item-text {
 
                     order: 1;
+                    margin-left: 0;
+                    margin-right: auto;
 
                     &-col1 {
 
-                        width: 350px;
+                        min-width: 300px;
                     }
                 }
             }
@@ -349,6 +374,40 @@
     }
 }
 
+@media screen and (max-width:1000px) {
+
+    .delivery-page {
+
+        &__zones {
+
+            &-item {
+
+                align-items: flex-start;
+
+                &-text {
+
+                    &-row {
+
+                        flex-wrap: wrap;
+                    }
+
+                    &-col1 {
+
+                        margin-bottom: 10px;
+                        margin-right: 0;
+                        width: 100%;
+
+                        & > span {
+
+                            margin-top: 7px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width:780px) {
 
     .delivery-page {
@@ -440,19 +499,10 @@
                 &-text {
 
                     margin-bottom: 10px;
+                    margin-left: 0 !important;
+                    margin-right: 0 !important;
 
                     order: 1 !important;
-
-                    &-row {
-
-                        flex-wrap: wrap;
-                        margin-bottom: 20px;
-                    }
-
-                    &-col1 {
-
-                        width: 100% !important;
-                    }
                 }
             }
         }
