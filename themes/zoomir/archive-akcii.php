@@ -15,7 +15,11 @@
                             <img src="<?php echo get_field('long_image', get_the_ID()); ?>">
                         </div>
                         <div class="akcii-page__item-skidka">
-                            <span>Скидка <?php echo get_field('proczent', get_the_ID()); ?></span>
+                            <span class="akcii-page__item-skidka-part1">Скидка <?php echo get_field('proczent', get_the_ID()); ?></span>
+                            <?php $opisanie_proczenta = get_field('opisanie_proczenta', get_the_ID()); ?>
+                            <?php if ($opisanie_proczenta) { ?>
+                                <span class="akcii-page__item-skidka-part2"><?php echo get_field('opisanie_proczenta', get_the_ID()); ?></span>
+                            <?php } ?>
                         </div>
                         <div class="akcii-page__item-date"><?php echo get_field('data_provedeniya', get_the_ID()); ?></div>
                     </a>
