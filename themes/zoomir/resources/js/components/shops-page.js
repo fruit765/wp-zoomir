@@ -58,7 +58,7 @@ $(document).ready(() => {
 
                 $('html, body').stop().animate(
                     {
-                        scrollTop: $(item).offset().top - 30,
+                        scrollTop: $(item).offset().top - 110,
                     },
                     {
                         duration: 300,
@@ -94,7 +94,7 @@ $(document).ready(() => {
 
             $('html, body').stop().animate(
                 {
-                    scrollTop: $('#map').offset().top - 30,
+                    scrollTop: $('#map').offset().top - 110,
                 },
                 {
                     duration: 300,
