@@ -26,6 +26,7 @@
                 left: 0;
                 font-family: "Aqum";
                 font-size: 25px;
+                line-height: 30px;
                 text-transform: uppercase;
                 padding: 0 70px;
                 box-sizing: border-box;
@@ -39,10 +40,25 @@
                     height: 70px;
                     top: -60px;
                     left: -100px;
-                    background-image: url('../resources/imgs/vakansii-single-page-about-text-title-vector-maykop.svg');
                     background-repeat: no-repeat;
                     background-position: 0 0;
                     background-size: auto 100%;
+                }
+
+                &_maykop {
+
+                    &::before {
+
+                        background-image: url('../resources/imgs/vakansii-single-page-about-text-title-vector-maykop.svg');
+                    }
+                }
+
+                &_belorechensk {
+
+                    &::before {
+
+                        background-image: url('../resources/imgs/vakansii-single-page-about-text-title-vector-belorechensk.svg');
+                    }
                 }
             }
 
@@ -107,6 +123,7 @@
 
                 font-family: "Aqum";
                 font-size: 25px;
+                line-height: 30px;
                 text-transform: uppercase;
                 margin-left: 30px;
             }
@@ -126,6 +143,7 @@
 
             font-family: "Aqum";
             font-size: 25px;
+            line-height: 30px;
             text-transform: uppercase;
             color: #C2000D;
             margin-bottom: 5px;
@@ -334,39 +352,6 @@
     }
 }
 
-@media screen and (max-width:540px) {
-
-    .vakansii-single-page {
-
-        &__about {
-    
-            &-text {
-    
-                &-title {
-
-                    font-size: 25px;
-                }
-            }
-
-            &-phone {
-
-                &-right {
-
-                    font-size: 25px;
-                }
-            }
-        }
-
-        &__send {
-
-            &-title {
-
-                font-size: 25px;
-            }
-        }
-    }
-}
-
 @media screen and (max-width:480px) {
 
     .vakansii-single-page {
@@ -378,6 +363,7 @@
                 &-title {
 
                     font-size: 22px;
+                    line-height: 25px;
                 }
             }
 
@@ -395,6 +381,7 @@
             &-title {
 
                 font-size: 22px;
+                line-height: 25px;
             }
         }
     }
@@ -411,6 +398,7 @@
                 &-title {
 
                     font-size: 20px;
+                    line-height: 23px;
                 }
             }
 
@@ -428,6 +416,7 @@
             &-title {
 
                 font-size: 20px;
+                line-height: 23px;
             }
         }
     }

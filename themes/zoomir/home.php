@@ -8,7 +8,9 @@
         </div>
 
         <div class="akcii">
-            <div class="akcii__title title">Акции</div>
+            <div class="akcii__title-wrapper section">
+                <div class="akcii__title title">Акции</div>
+            </div>
             <div class="akcii__items">
                 <?php $loop = new WP_Query(array('posts_per_page' => 0, 'post_type' => 'akcii', 'orderby' => 'id', 'order' => 'DESC')); ?>
                 <?php while ($loop->have_posts()) { $loop->the_post() ?>
@@ -51,7 +53,13 @@
         </div>
 
         <div class="skidki section">
-            <div class="skidki__title title"><span>Скидки</span><br>на все товары</div>
+            <div class="skidki__title-wrapper">
+                <div class="skidki__title title">
+                    <span class="skidki__title_red skidki__title_first">Скидки</span>
+                    <span class="skidki__title_second">на все</span>
+                    <span class="skidki__title_third">товары</span>
+                </div>
+            </div>
             <div class="skidki__items">
                 <div class="skidki__item">
                     <div class="skidki__item-title">В Майкопе</div>
@@ -79,7 +87,7 @@
         </div>
 
         <div class="instagramm">
-            <div class="instagramm__title title">
+            <div class="instagramm__title title section">
                 <div class="instagramm__title-wrapper">
                     <span class="instagramm__title-span1">Наш</span><br><span class="instagramm__title-span2">Инстаграм</span>
                 </div>

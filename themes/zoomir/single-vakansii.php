@@ -3,7 +3,16 @@
         <div class="vakansii-single-page">
             <div class="vakansii-single-page__about">
                 <div class="vakansii-single-page__about-text">
-                    <div class="vakansii-single-page__about-text-title">
+                    <?php
+                        $city = get_field('city', get_the_ID());
+                        if ($city === 'Майкоп') {
+                            $class = ' vakansii-single-page__about-text-title_maykop';
+                        }
+                        else {
+                            $class = ' vakansii-single-page__about-text-title_belorechensk';
+                        }
+                    ?>
+                    <div class="vakansii-single-page__about-text-title<?php echo $class; ?>">
                         <?php the_title(); ?>
                     </div>
                     <div class="vakansii-single-page__about-text-table">

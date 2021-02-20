@@ -31,8 +31,8 @@
             position: absolute;
             width: 140px;
             height: 190px;
-            top: -70px;
-            left: -120px;
+            top: -40px;
+            left: -115px;
             background-image: url('../resources/imgs/delivery-vector.svg');
             background-repeat: no-repeat;
             background-position: 0 0;
@@ -58,7 +58,7 @@
     &__desc {
 
         font-size: 18px;
-        margin: 30px 0;
+        margin: 30px 0 50px 0;
     }
 
     &__more {
@@ -67,14 +67,30 @@
     }
 }
 
+@media screen and (max-width:1150px) {
+
+    .delivery {
+    
+        background-position: calc(100% + 220px) 100%;
+    }
+}
+
+@media screen and (max-width:920px) {
+
+    .delivery {
+    
+        padding-top: 100px;
+        padding-bottom: 70px;
+    }
+}
+
 @media screen and (max-width:780px) {
 
     .delivery {
 
-        margin-top: 50px;
+        margin-top: 120px;
         padding-bottom: 300px;
-        background-size: auto 440px;
-        background-position: right bottom;
+        background-size: auto 420px;
         max-height: none;
         padding-top: 50px;
 
@@ -86,13 +102,24 @@
 
                 font-size: 50px;
                 line-height: 50px;
+                margin-bottom: 10px;
+            }
+            
+            &::before {
+
+                width: 38px;
+                height: 30px;
+                background-image: url('../resources/imgs/delivery-vector-mobile.svg');
+                background-size: auto 30px;
+                top: 80px;
+                left: -10px;
             }
     
             &::after {
     
                 width: 215px;
                 height: 190px;
-                top: -80px;
+                top: -90px;
                 right: -30px;
                 background-image: url('../resources/imgs/delivery-round-text-mobile.svg');
                 background-size: 215px auto;
@@ -102,6 +129,10 @@
         &__desc {
 
             padding-right: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 16px;
+            line-height: 22px;
         }
     }
 }
@@ -110,16 +141,14 @@
 
     .delivery {
 
-        padding-bottom: 250px;
-        background-size: auto 390px;
-
         &__title {
 
             line-height: 70px;
 
             &::before {
 
-                top: -80px;
+                top: 70px;
+                left: -15px;
             }
 
             span {
@@ -135,9 +164,6 @@
 
     .delivery {
 
-        padding-bottom: 200px;
-        background-size: auto 340px;
-
         &__title {
 
             line-height: 60px;
@@ -150,7 +176,8 @@
 
             &::before {
 
-                top: -90px;
+                top: 60px;
+                left: -18px;
             }
     
             &::after {
@@ -165,8 +192,10 @@
 
     .delivery {
 
-        padding-bottom: 150px;
-        background-size: auto 240px;
+        background-image: url('../resources/imgs/delivery-background-mobile.png');
+        background-position: 100% 100%;
+        background-size: auto 302px;
+        padding-bottom: 180px;
 
         &__title {
 
@@ -180,7 +209,8 @@
 
             &::before {
 
-                top: -100px;
+                top: 50px;
+                left: -20px;
             }
     
             &::after {
@@ -195,9 +225,6 @@
 
     .delivery {
 
-        padding-bottom: 50px;
-        background-size: auto 150px;
-
         &__title {
 
             line-height: 45px;
@@ -210,7 +237,8 @@
 
             &::before {
 
-                top: -110px;
+                top: 40px;
+                left: -22px;
             }
     
             &::after {
@@ -225,8 +253,6 @@
 
     .delivery {
 
-        background-size: auto 140px;
-
         &__title {
 
             line-height: 40px;
@@ -239,7 +265,8 @@
 
             &::before {
 
-                top: -120px;
+                top: 30px;
+                left: -23px;
             }
         }
     }

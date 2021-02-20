@@ -2,15 +2,26 @@
 
     margin-top: 190px;
 
+    &__title-wrapper {
+
+        margin-bottom: 30px;
+        text-align: right;
+    }
+
     &__title {
 
         display: inline-block;
+        margin-right: 20%;
         text-align: right;
-        margin-bottom: 30px;
 
-        span {
+        &_red {
 
             color: #C2000D;
+        }
+
+        &_first {
+
+            display: block;
         }
     }
 
@@ -52,25 +63,10 @@
                 height: 140px;
                 top: 0;
                 left: 0;
-                background-image: url('../resources/imgs/skidki-item-procent-image1.svg');
+                background-image: url('../resources/imgs/skidki-item-procent-image-num.svg');
                 background-repeat: no-repeat;
-                background-position: -20px -15px;
-                background-size: 130px auto;
-            }
-
-            &::after {
-
-                content: '';
-                display: block;
-                position: absolute;
-                width: 140px;
-                height: 140px;
-                top: 0;
-                left: 0;
-                background-image: url('../resources/imgs/skidki-item-procent-image2.svg');
-                background-repeat: no-repeat;
-                background-position: 30px 25px;
-                background-size: 130px auto;
+                background-position: center;
+                background-size: 190px auto;
             }
         }
 
@@ -80,16 +76,8 @@
 
                 &::before {
 
-                    background-image: url('../resources/imgs/skidki-item-procent-image3.svg');
-                    background-position: -15px -5px;
-                    background-size: 140px auto;
-                }
-
-                &::after {
-
-                    background-image: url('../resources/imgs/skidki-item-procent-image4.svg');
-                    background-position: 15px 18px;
-                    background-size: 140px auto;
+                    background-image: url('../resources/imgs/skidki-item-procent-image-text.svg');
+                    background-size: 200px auto;
                 }
             }
         }
@@ -116,11 +104,38 @@
 
     .skidki {
 
-        margin-top: 50px;
+        margin-top: 80px;
+
+        &__title-wrapper {
+
+            text-align: left;
+        }
+
+        &__title {
+
+            margin-right: 0;
+            display: flex;
+            flex-direction: column;
+
+            &_first {
+
+                align-self: flex-end;
+            }
+
+            &_second {
+
+                align-self: flex-start;
+            }
+
+            &_third {
+
+                align-self: center;
+            }
+        }
 
         &__item {
 
-            padding-top: 30px;
+            padding-top: 40px;
             position: relative;
             width: 100%;
             margin-bottom: 30px;
