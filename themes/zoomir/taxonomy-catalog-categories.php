@@ -1,6 +1,30 @@
 <?php get_header(); ?>
     <div class="catalog-categories-page">
-        <div class="catalog-categories-page__title title section"><?php echo get_queried_object()->name; ?></div>
+        <div class="catalog-categories-page__title-wrapper section">
+            <?php
+                $title_flag = '';
+                switch (get_queried_object()->name) {
+                    case 'Корма':
+                        $title_flag = ' catalog-categories-page__title_korma';
+                        break;
+                    case 'Аксессуары':
+                        $title_flag = ' catalog-categories-page__title_aksessuary';
+                        break;
+                    case 'Садоводство':
+                        $title_flag = ' catalog-categories-page__title_sadovodstvo';
+                        break;
+                    case 'Рыбы и рептилии':
+                        $title_flag = ' catalog-categories-page__title_ryby-i-reptilii';
+                        break;
+                    case 'Животные':
+                        $title_flag = ' catalog-categories-page__title_zhivotnye';
+                        break;
+                    default:
+                        break;
+                }
+            ?>
+            <div class="catalog-categories-page__title title<?php echo $title_flag; ?>"><?php echo get_queried_object()->name; ?></div>
+        </div>
         <div class="catalog-categories-page__desc section">
             <div class="catalog-categories-page__desc-text">
                 <?php echo get_queried_object()->description; ?>
