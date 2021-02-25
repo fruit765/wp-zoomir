@@ -28,7 +28,73 @@
             &::before {
 
                 height: 35px;
+                top: 23px;
+                right: -165px;
                 background-image: url('../resources/imgs/catalog-categories-vector2.svg');
+            }
+        }
+
+        &_aksessuary {
+
+            &::before {
+
+                width: 123px;
+                height: 91px;
+                top: 23px;
+                right: -103px;
+                background-image: url('../resources/imgs/catalog-categories-vector3.svg');
+            }
+        }
+
+        &_sadovodstvo {
+
+            &::before {
+
+                width: 144px;
+                height: 64px;
+                top: 33px;
+                right: -65px;
+                background-image: url('../resources/imgs/catalog-categories-vector4.svg');
+            }
+        }
+
+        &_ryby-i-reptilii {
+
+            &::before {
+
+                display: none;
+            }
+
+            span {
+
+                position: relative;
+
+                &::before {
+
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    width: 150px;
+                    height: 85px;
+                    top: 38px;
+                    right: -118px;
+                    background-image: url('../resources/imgs/catalog-categories-vector5.svg');
+                    background-repeat: no-repeat;
+                    background-size: auto 100%;
+                    background-position: 0 0;
+                }
+            }
+        }
+
+        &_zhivotnye {
+
+            &::before {
+
+                width: 115px;
+                height: 46px;
+                top: 35px;
+                right: -60px;
+                background-image: url('../resources/imgs/catalog-categories-vector6.svg');
             }
         }
     }
@@ -146,6 +212,73 @@
                 right: 3px;
                 background-image: url('../resources/imgs/catalog-categories-vector-mobile1.svg');
             }
+
+            &_korma {
+
+                &::before {
+
+                    width: 81px;
+                    height: 42px;
+                    top: 40px;
+                    right: -55px;
+                    background-image: url('../resources/imgs/catalog-categories-vector-mobile2.svg');
+                }
+            }
+
+            &_aksessuary {
+
+                padding-left: 40px;
+
+                &::before {
+    
+                    width: 80px;
+                    height: 36px;
+                    top: 40px;
+                    right: auto;
+                    left: -12px;
+                    background-image: url('../resources/imgs/catalog-categories-vector-mobile3.svg');
+                }
+            }
+
+            &_sadovodstvo {
+
+                &::before {
+    
+                    width: 39px;
+                    height: 44px;
+                    top: 55px;
+                    right: auto;
+                    left: -20px;
+                    background-image: url('../resources/imgs/catalog-categories-vector-mobile4.svg');
+                }
+            }
+
+            &_ryby-i-reptilii {
+            
+                span {
+
+                    &::before {
+
+                        width: 130px;
+                        height: 83px;
+                        top: 35px;
+                        right: -100px;
+                        background-image: url('../resources/imgs/catalog-categories-vector-mobile5.svg');
+                    }
+                }
+            }
+
+            &_zhivotnye {
+
+                &::before {
+    
+                    width: 120px;
+                    height: 45px;
+                    top: 37px;
+                    right: -65px;
+                    background-image: url('../resources/imgs/catalog-categories-vector-mobile6.svg');
+                }
+            }
         }
     
         &__desc {
@@ -177,6 +310,46 @@
             
                 right: 0;
             }
+
+            &_korma {
+
+                &::before {
+
+                    top: 40px;
+                    right: -60px;
+                }
+            }
+
+            &_aksessuary {
+
+                &::before {
+    
+                    left: -15px;
+                }
+            }
+
+            &_ryby-i-reptilii {
+
+                line-height: 70px;
+            
+                span {
+
+                    &::before {
+
+                        top: 33px;
+                        right: -100px;
+                    }
+                }
+            }
+
+            &_zhivotnye {
+
+                &::before {
+    
+                    top: 37px;
+                    right: -70px;
+                }
+            }
         }
     }
 }
@@ -192,6 +365,70 @@
                 width: 20px;
                 height: 50px;
             }
+
+            &_korma {
+
+                &::before {
+
+                    width: 81px;
+                    height: 42px;
+                    top: 30px;
+                    right: -60px;
+                }
+            }
+
+            &_aksessuary {
+
+                &::before {
+    
+                    width: 80px;
+                    height: 36px;
+                    top: 35px;
+                    right: auto;
+                    left: -18px;
+                }
+            }
+
+            &_sadovodstvo {
+
+                font-size: 55px;
+
+                &::before {
+    
+                    width: 39px;
+                    height: 44px;
+                    top: 45px;
+                    right: auto;
+                    left: -20px;
+                }
+            }
+
+            &_ryby-i-reptilii {
+
+                line-height: 60px;
+            
+                span {
+
+                    &::before {
+
+                        width: 61px;
+                        height: 39px;
+                        top: 30px;
+                        right: -40px;
+                    }
+                }
+            }
+
+            &_zhivotnye {
+
+                &::before {
+    
+                    width: 90px;
+                    height: 34px;
+                    top: 30px;
+                    right: -50px;
+                }
+            }
         }
     }
 }
@@ -205,6 +442,54 @@
             &::before {
             
                 top: 25px;
+            }
+
+            &_korma {
+
+                &::before {
+
+                    top: 25px;
+                    right: -65px;
+                }
+            }
+
+            &_sadovodstvo {
+
+                font-size: 45px;
+
+                &::before {
+    
+                    width: 39px;
+                    height: 44px;
+                    top: 35px;
+                    right: auto;
+                    left: -23px;
+                }
+            }
+
+            &_ryby-i-reptilii {
+
+                line-height: 50px;
+            
+                span {
+
+                    &::before {
+
+                        top: 25px;
+                        right: -45px;
+                    }
+                }
+            }
+
+            &_zhivotnye {
+
+                &::before {
+    
+                    width: 80px;
+                    height: 30px;
+                    top: 28px;
+                    right: -45px;
+                }
             }
         }
     }
@@ -223,6 +508,68 @@
                 top: 22px;
                 right: 1px;
             }
+
+            &_korma {
+
+                &::before {
+
+                    width: 81px;
+                    height: 42px;
+                    top: 23px;
+                    right: -65px;
+                }
+            }
+
+            &_aksessuary {
+
+                &::before {
+    
+                    width: 62px;
+                    height: 28px;
+                    top: 25px;
+                    right: auto;
+                    left: -5px;
+                }
+            }
+
+            &_sadovodstvo {
+
+                font-size: 40px;
+
+                &::before {
+    
+                    width: 39px;
+                    height: 44px;
+                    top: 33px;
+                    right: auto;
+                    left: -23px;
+                }
+            }
+
+            &_ryby-i-reptilii {
+
+                line-height: 45px;
+            
+                span {
+
+                    &::before {
+
+                        top: 22px;
+                        right: -45px;
+                    }
+                }
+            }
+
+            &_zhivotnye {
+
+                &::before {
+    
+                    width: 80px;
+                    height: 30px;
+                    top: 25px;
+                    right: -47px;
+                }
+            }
         }
     }
 }
@@ -237,6 +584,123 @@
             
                 top: 15px;
                 right: 0;
+            }
+
+            &_korma {
+
+                &::before {
+
+                    top: 15px;
+                    right: -67px;
+                }
+            }
+
+            &_aksessuary {
+
+                font-size: 35px;
+
+                &::before {
+    
+                    top: 20px;
+                    right: auto;
+                    left: -8px;
+                }
+            }
+
+            &_sadovodstvo {
+
+                font-size: 35px;
+
+                &::before {
+    
+                    width: 39px;
+                    height: 44px;
+                    top: 17px;
+                    right: auto;
+                    left: -25px;
+                }
+            }
+
+            &_ryby-i-reptilii {
+
+                font-size: 35px;
+                line-height: 35px;
+            
+                span {
+
+                    &::before {
+
+                        top: 8px;
+                        right: -47px;
+                    }
+                }
+            }
+
+            &_zhivotnye {
+
+                &::before {
+    
+                    width: 70px;
+                    height: 26px;
+                    top: 18px;
+                    right: -42px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:320px) {
+
+    .catalog-categories-page {
+
+        &__title {
+
+            &_aksessuary {
+
+                font-size: 30px;
+            }
+
+            &_sadovodstvo {
+
+                font-size: 30px;
+
+                &::before {
+    
+                    width: 39px;
+                    height: 44px;
+                    top: 22px;
+                    right: auto;
+                    left: -25px;
+                }
+            }
+
+            &_ryby-i-reptilii {
+
+                font-size: 30px;
+                line-height: 30px;
+            
+                span {
+
+                    &::before {
+
+                        top: 15px;
+                        right: -47px;
+                    }
+                }
+            }
+
+            &_zhivotnye {
+
+                font-size: 30px;
+
+                &::before {
+    
+                    width: 70px;
+                    height: 26px;
+                    top: 22px;
+                    right: -48px;
+                }
             }
         }
     }
